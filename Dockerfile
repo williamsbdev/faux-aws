@@ -1,5 +1,5 @@
 FROM python:2.7
-RUN pip install flask
+RUN pip install flask lxml
 EXPOSE 5000
 RUN mkdir /faux-aws
 WORKDIR /faux-aws
