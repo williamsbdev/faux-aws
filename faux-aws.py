@@ -35,7 +35,7 @@ def readDataFile(filename):
 
 @aws_endpoints.route('/', defaults={'path': ''})
 @aws_endpoints.route('/<path:path>', methods=['GET','POST'])
-def imds(path):
+def handler(path):
     root = "/data"
 
     service = path.split('/', 1)[0]
